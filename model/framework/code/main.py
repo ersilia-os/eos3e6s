@@ -70,9 +70,3 @@ with open(output_file, "w") as f:
     writer.writerow([f"smi_{i:02d}" for i in range(100)])
     for r in outputs:
         writer.writerow(r)
-
-with open("test_v1.csv", "w") as f:
-    writer = csv.writer(f)
-    writer.writerow(["n_sim", "n_physchem", "n_scaffold"])
-    for r in zip(len_sim, len_phys, len_scaff):
-        writer.writerow(r)
