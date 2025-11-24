@@ -3,43 +3,32 @@ Slug: chembl-decoys
 Status: In progress
 Title: ChEMBL decoy sampler
 Description: This model samples decoy molecules from ChEMBL35 to build negative datasets.
-  We look for molecules with low tanimoto similarity (<= 0.3) but similar physicochemical
-  characteristics (MW, LogP, HDB, HAB, etc). For each input molecule, the model will
-  return up to 100 decoys.
+  We look for molecules with low tanimoto similarity (<= 0.25) but similar physicochemical
+  characteristics (MW, LogP, HDB, HAB, RB). For each input molecule, the model will
+  return 100 decoys. The design has been informed by other methods such as DUD-E and LUDe.
 Deployment:
 - Local
-- Online
-Source: Local, Online
-Source Type: Internal, Replicated, External
-Task: Annotation, Representation, Sampling
-Subtask: Property calculation or prediction, Activity prediction, Featurization, Projection,
-  Similarity search, Generation
+Source: Local
+Source Type: Internal
+Task: Sampling
+Subtask:  Similarity search
 Input:
 - Compound
 Input Dimension: 1
 Output:
-- Value
-- Score
 - Compound
-- Probability
-- Experimental value
-- '...'
 Output Dimension: 1
-Output Consistency: Fixed, Variable
-Interpretation: 'The output of this template model should be interpreted like this.
-
-  '
+Output Consistency: Variable
+Interpretation: '100 decoy molecules with similar physicochemical properties and low tanimoto similarity.'
 Tag:
 - ChEMBL
 - Similarity
 Biomedical Area:
-- Biomedical Area 1
-- Biomedical Area 2
+- Any
 Target Organism:
-- Target Organism 1
-- Target Organism 2
-Publication Type: Peer reviewed, Preprint, Other
+- Any
+Publication Type: Other
 Publication Year: 2025
 Publication: https://ersilia.io
-Source Code: null
+Source Code: https://ersilia.io
 License: GPL-3.0-or-later
