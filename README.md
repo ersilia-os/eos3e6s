@@ -2,6 +2,7 @@
 
 This model samples decoy molecules from ChEMBL35 to build negative datasets. We look for molecules with low tanimoto similarity (<= 0.25) but similar physicochemical characteristics (MW, LogP, HDB, HAB, RB). For each input molecule, the model will return 100 decoys. The design has been informed by other methods such as DUD-E and LUDe.
 
+This model was incorporated on 2025-11-16.
 
 
 ## Information
@@ -43,8 +44,11 @@ _10 of 100 columns are shown_
 ### Source and Deployment
 - **Source:** `Local`
 - **Source Type:** `Internal`
+- **S3 Storage**: [https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos3e6s.zip](https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos3e6s.zip)
 
 ### Resource Consumption
+- **Model Size (Mb):** `1679`
+- **Environment Size (Mb):** `815`
 
 
 ### References
