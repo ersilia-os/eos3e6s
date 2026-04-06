@@ -1,6 +1,6 @@
 Identifier: eos3e6s
 Slug: chembl-decoys
-Status: Ready
+Status: In maintenance
 Title: ChEMBL decoy sampler
 Description: This model samples decoy molecules from ChEMBL35 to build negative 
   datasets. We look for molecules with low tanimoto similarity (<= 0.25) but 
