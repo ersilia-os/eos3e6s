@@ -18,7 +18,7 @@ Input:
 Input Dimension: 1
 Output:
   - Compound
-Output Dimension: 1
+Output Dimension: 100
 Output Consistency: Variable
 Interpretation: 100 decoy molecules with similar physicochemical properties and 
   low tanimoto similarity.
