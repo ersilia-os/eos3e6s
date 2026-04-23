@@ -1,0 +1,5 @@
+model/framework/fit/data/ filter=lfs diff=lfs merge=lfs -text
+model/framework/fit/data/chembl_props.csv filter=lfs diff=lfs merge=lfs -text
+model/framework/fit/data/fpsim2_database_chembl.h5 filter=lfs diff=lfs merge=lfs -text
+model/framework/fit/data/fpsim2_database_chembl_smiles.csv filter=lfs diff=lfs merge=lfs -text
+model/framework/fit/data/chembl_scaffolds.csv filter=lfs diff=lfs merge=lfs -text
