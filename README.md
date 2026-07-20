@@ -21,7 +21,7 @@ This model was incorporated on 2025-11-16.Last packaged on 2025-11-24.
 - **Input Dimension:** `1`
 
 ### Output
-- **Output Dimension:** `1`
+- **Output Dimension:** `100`
 - **Output Consistency:** `Variable`
 - **Interpretation:** 100 decoy molecules with similar physicochemical properties and low tanimoto similarity.
 
