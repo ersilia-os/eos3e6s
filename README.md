@@ -1,6 +1,6 @@
 # ChEMBL decoy sampler
 
-This model samples decoy molecules from ChEMBL35 to build negative datasets. We look for molecules with low tanimoto similarity (<= 0.25) but similar physicochemical characteristics (MW, LogP, HDB, HAB, RB). For each input molecule, the model will return 100 decoys. The design has been informed by other methods such as DUD-E and LUDe.
+Assembles 100 decoy molecules for a query compound, selecting from ChEMBL35 structures that match it on molecular weight, lipophilicity, hydrogen bond counts and rotatable bonds while remaining structurally dissimilar below a Tanimoto threshold of 0.25. Decoys constructed this way give a negative set that cannot be separated from actives by gross physical properties alone, which is what makes benchmark comparisons meaningful. Selection is randomised, so repeated runs return different sets.
 
 This model was incorporated on 2025-11-16.Last packaged on 2025-11-24.
 
@@ -23,7 +23,7 @@ This model was incorporated on 2025-11-16.Last packaged on 2025-11-24.
 ### Output
 - **Output Dimension:** `100`
 - **Output Consistency:** `Variable`
-- **Interpretation:** 100 decoy molecules with similar physicochemical properties and low tanimoto similarity.
+- **Interpretation:** 100 decoy molecules matched on physicochemical properties but structurally dissimilar to the query.
 
 Below are the **Output Columns** of the model:
 | Name | Type | Direction | Description |
