@@ -13,8 +13,8 @@ class ChemblLowSimilarity(object):
 
     def __init__(self, threshold=0.25):
         self.threshold = threshold
-        self.fp_database = os.path.join(root, "..", "fit", "data", "fpsim2_database_chembl.h5")
-        self.fp_smiles = os.path.join(root, "..", "fit", "data", "fpsim2_database_chembl_smiles.csv")
+        self.fp_database = os.path.join(root, "..", "..", "checkpoints", "fpsim2_database_chembl.h5")
+        self.fp_smiles = os.path.join(root, "..", "..", "checkpoints", "fpsim2_database_chembl_smiles.csv")
         self.fpe = FPSim2Engine(self.fp_database, in_memory_fps=False)
 
     def get_low_similarity(self, smiles):
@@ -33,7 +33,7 @@ class ChemblLowSimilarity(object):
 
 class ChemblProps(object):
     def __init__(self):
-        df = pd.read_csv(os.path.join(root, "..", "fit", "data", "chembl_props.csv"))
+        df = pd.read_csv(os.path.join(root, "..", "..", "checkpoints", "chembl_props.csv"))
 
         self.smiles_to_props = {}
         for row in df.itertuples(index=False):
@@ -111,7 +111,7 @@ class ChemblProps(object):
     
 class ScaffoldDiversity(object):
     def __init__(self):
-        df = pd.read_csv(os.path.join(root, "..", "fit", "data", "chembl_scaffolds.csv"))
+        df = pd.read_csv(os.path.join(root, "..", "..", "checkpoints", "chembl_scaffolds.csv"))
         self.smiles_to_scaffold = dict(
             zip(df["smiles"].astype(str), df["scaffold"].astype(str))
         )
