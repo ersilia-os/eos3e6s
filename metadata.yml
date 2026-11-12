@@ -40,7 +40,7 @@ License: GPL-3.0-or-later
 Contributor: GemmaTuron
 Incorporation Date: '2025-11-16'
 Last Packaging Date: '2026-11-12'
-Release: v1.0.1
+Release: v1.1.0
 S3: https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos3e6s.zip
 DockerHub: https://hub.docker.com/r/ersiliaos/eos3e6s
 Docker Architecture:
