@@ -3,7 +3,7 @@
 Assembles 100 decoy molecules for a query compound, drawing on ChEMBL35 structures that match it on molecular weight, lipophilicity, hydrogen bond counts and rotatable bonds while staying below a Tanimoto ceiling of 0.25, with a further filter that keeps the scaffolds diverse. Built along the lines of DUD-E and LUDe, the aim is a negative set that cannot be told from actives by gross physical properties alone. Sampling is unseeded, so repeated runs return different decoys, and sparse queries are topped up from the dissimilar pool.
 
 This model was incorporated on 2025-11-16.
-Last packaged on 2025-11-24.
+Last packaged on 2026-11-12.
 
 ## Information
 ### Identifiers
@@ -45,17 +45,17 @@ _10 of 100 columns are shown_
 - **Source:** `Local`
 - **Source Type:** `Internal`
 - **DockerHub**: [https://hub.docker.com/r/ersiliaos/eos3e6s](https://hub.docker.com/r/ersiliaos/eos3e6s)
-- **Docker Architecture:** `AMD64`
+- **Docker Architecture:** `AMD64`, `ARM64`
 - **S3 Storage**: [https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos3e6s.zip](https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos3e6s.zip)
 
 ### Resource Consumption
 - **Model Size (Mb):** `840`
 - **Environment Size (Mb):** `856`
-- **Image Size (Mb):** `3257.67`
+- **Image Size (Mb):** `476.33`
 
 **Computational Performance (seconds):**
-- 10 inputs: `49.03`
-- 100 inputs: `535.43`
+- 10 inputs: `48.19`
+- 100 inputs: `539.47`
 - 10000 inputs: `-1`
 
 ### References
