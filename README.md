@@ -2,7 +2,8 @@
 
 Assembles 100 decoy molecules for a query compound, drawing on ChEMBL35 structures that match it on molecular weight, lipophilicity, hydrogen bond counts and rotatable bonds while staying below a Tanimoto ceiling of 0.25, with a further filter that keeps the scaffolds diverse. Built along the lines of DUD-E and LUDe, the aim is a negative set that cannot be told from actives by gross physical properties alone. Sampling is unseeded, so repeated runs return different decoys, and sparse queries are topped up from the dissimilar pool.
 
-This model was incorporated on 2025-11-16.Last packaged on 2025-11-24.
+This model was incorporated on 2025-11-16.
+Last packaged on 2025-11-24.
 
 ## Information
 ### Identifiers
