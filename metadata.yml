@@ -39,16 +39,18 @@ Source Code: https://ersilia.io
 License: GPL-3.0-or-later
 Contributor: GemmaTuron
 Incorporation Date: '2025-11-16'
-Last Packaging Date: '2025-11-24'
+Last Packaging Date: '2026-11-12'
 Release: v1.0.1
 S3: https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos3e6s.zip
 DockerHub: https://hub.docker.com/r/ersiliaos/eos3e6s
-Docker Architecture: AMD64
+Docker Architecture:
+  - AMD64
+  - ARM64
 Model Size: 840.0
 Environment Size: 856.0
-Image Size: 3257.67
-Computational Performance 1: 49.03
-Computational Performance 2: 81.65
-Computational Performance 3: 535.43
+Image Size: 476.33
+Computational Performance 1: 48.19
+Computational Performance 2: 81.17
+Computational Performance 3: 539.47
 Computational Performance 4: -1.0
 Computational Performance 5: -1.0
